@@ -7,6 +7,16 @@
 # Email spool folder
 /app/spool/*
 
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+/.DS_Store
+###< symfony/framework-bundle ###
+
 # Cache, session files and logs (Symfony3)
 /var/cache/*
 /var/logs/*
