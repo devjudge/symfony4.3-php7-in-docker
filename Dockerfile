@@ -1,4 +1,4 @@
-FROM composer:latest
+FROM composer:1.9
 
 COPY . /tmp/
 
