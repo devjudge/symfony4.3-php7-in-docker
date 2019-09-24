@@ -4,7 +4,7 @@ COPY . /tmp/
 
 WORKDIR /tmp/
 
-EXPOSE 8000
+EXPOSE 8080
 
 # Build the app
 RUN wget https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/backend-project/symfony/build.sh
