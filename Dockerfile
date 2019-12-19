@@ -1,5 +1,10 @@
 FROM composer:1.9
 
+# Pre Build Commands
+RUN wget https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/backend-project/symfony/pre-build.sh
+RUN chmod 775 ./pre-build.sh
+RUN sh pre-build.sh
+
 COPY . /tmp/
 
 WORKDIR /tmp/
