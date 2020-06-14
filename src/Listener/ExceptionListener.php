@@ -15,12 +15,9 @@ class ExceptionListener
     public function onKernelException(GetResponseForExceptionEvent $event)
     {
         $exception = $event->getException();
-        $request   = $event->getRequest();
 
-        // if (in_array('application/json', $request->getAcceptableContentTypes())) {
-            $response = $this->createApiResponse($exception);
-            $event->setResponse($response);
-        // }
+        $response = $this->createApiResponse($exception);
+        $event->setResponse($response);
     }
     
     /**
